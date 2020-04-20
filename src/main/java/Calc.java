@@ -13,6 +13,10 @@ public class Calc {
         double result = calc(num1, num2, operation);
         System.out.printf("Результат: %.4f", result);
     }
+
+        /*public static callCalc(){
+            Calc calc = new Calc();
+        }*/
 /*Вводим числа для последующих операций*/
         public static double getNumber(){
             Scanner s = new Scanner(System.in);
