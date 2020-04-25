@@ -3,13 +3,15 @@ import java.util.Scanner;
 public class ProgrammChoice {
     public static void main(String[] args) {
         Scanner s  = new Scanner(System.in);
-        System.out.println("Выбираем, что хотим сделать. \n 1 - калькулятор \n 2 - находим самое длинное число в массиве");
+        System.out.println("Выбираем, что хотим сделать. \n 1 - калькулятор \n 2 - находим самое длинное слово в массиве");
         int choice = s.nextInt();
         if (choice == 1){
             Calc calc = new Calc();
             calcCall();
-        }else{
+        }else if(choice == 2){
           ArrayForChoice.array();
+        }else{
+            System.out.println("Ты ввел неправильное число");
         }
     }
 
