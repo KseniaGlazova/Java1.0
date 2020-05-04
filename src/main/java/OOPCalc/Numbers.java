@@ -1,9 +1,10 @@
 package OOPCalc;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Numbers {
-    public static double getNumber(){
+    public static double getNumber() throws IOException {
         Scanner s = new Scanner(System.in);
         System.out.println("Введи дробное число: ");
         if (s.hasNextDouble()) {

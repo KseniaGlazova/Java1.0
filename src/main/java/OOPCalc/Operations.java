@@ -59,6 +59,9 @@ public class Operations {
      * @return num1/num2
      */
     public static double div (double num1, double num2){ //описывает операцию деления
+        if (num2 == 0){
+            throw new ArithmeticException("На ноль делить нельзя!");
+        }
         return num1/num2;
     }
 }
